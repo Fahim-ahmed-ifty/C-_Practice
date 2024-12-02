@@ -8,8 +8,14 @@ int main(int argc, char* argv[]) {
     int e = b / a;
     int f = b * a;
 
-    for (int i = 0; i < 10;i++){
-        std::cout << "*\n";
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10-i; j++) {
+            std::cout << " ";
+        }
+        for (int k = 1; k <= (2 * i - 1);k++){
+            std::cout << "*";
+        }
+            std::cout << "\n";
     }
 
         // std::cout << "Hello Fahim and " << c << ' ' << d << ' ' << e << ' ' << f << std::endl;
